@@ -1,0 +1,22 @@
+.wrapp-search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    background-color: #fff;
+    &__icon{
+        position: absolute;
+        left: 30px;
+    }
+    input{
+        border: none;
+        padding: 15px;
+        padding-left: 45px;
+        border-radius: 10px;
+        width: 100%;
+        &:focus-visible{
+            outline: #bdbdbd auto 1px;
+        }
+    }
+
+}

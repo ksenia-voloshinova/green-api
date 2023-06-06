@@ -1,0 +1,37 @@
+.chatItem{
+    height: 72px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e9edef;
+    .avatar-wrap {
+        display: flex;
+        align-items: center;
+        padding: 5px 15px 5px 13px;
+        .avatar {
+            width: 49px;
+            height: 49px;
+            border-radius: 100%;
+        }
+    }
+    
+    .info-wrap {
+        .contact {
+            font-size: 17px;
+        }
+        
+        
+        .message {
+            overflow: hidden;
+            font-size: 14px;
+            margin-top: 2px;
+            display: flex;
+            align-items: center;
+            min-height: 20px;
+            font-size: 13px;
+            line-height: 20px;
+            color: #3b4a54;
+            
+        }
+    }
+    
+}

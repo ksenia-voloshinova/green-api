@@ -1,0 +1,35 @@
+.auth__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .auth__button{
+        padding: 8px 12px;
+        border-radius: 5px;
+        border: none;
+        background-color:#3b4a54;
+        color: #e3e8f3;
+        transition: all .2s ease-out;
+        &:hover{
+            background-color:rgb(87, 109, 123);
+        }
+    }
+}
+.auth__wrapp-input{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    label{
+        margin-bottom: 8px;
+    }
+    .input-auth {
+        min-width: 300px;
+        padding: 15px;
+        border:none;
+        border-radius: 10px;
+        background-color: #e3e8f3;
+        &:focus-visible{
+            outline: #bdbdbd auto 1px;
+        }
+    }
+}

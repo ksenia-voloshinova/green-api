@@ -1,0 +1,10 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    color: #3b4a54;
+    background-color: #eae6df;
+    background-image: linear-gradient(180deg, #eae6df ,#d1d7db);
+    background-repeat: repeat-x;
+}
