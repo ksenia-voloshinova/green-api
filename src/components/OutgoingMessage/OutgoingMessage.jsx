@@ -1,11 +1,11 @@
 import React from 'react';
 
-function OutgoingMessage(props) {
+function OutgoingMessage({message}) {
     return (
         <>
             <div className="message flex-end">
                 <div className="message-outgoing">
-                    dgffgfdf
+                    {message}
                 </div>
             </div>
         </>

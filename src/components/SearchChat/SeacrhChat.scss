@@ -4,18 +4,31 @@
     align-items: center;
     padding: 15px 15px;
     background-color: #fff;
-    &__icon{
+
+    &__button{
         position: absolute;
-        left: 30px;
+        right: 25px;
+        border-radius: 5px;
+        background-color: #efeae2;
+        border: none;
+        padding: 8px 11px;
+        font-size: 12px;
+        font-family: "Ubuntu", sans-serif;
+        &:hover, &:focus{
+            background-color: #bebab4;
+        }
     }
-    input{
+    &__input{
+        
+        font-family: "Ubuntu", sans-serif;
         border: none;
         padding: 15px;
-        padding-left: 45px;
         border-radius: 10px;
         width: 100%;
+        outline: #bdbdbd auto 1px;
+
         &:focus-visible{
-            outline: #bdbdbd auto 1px;
+            outline: #7d7b7b auto 1px;
         }
     }
 

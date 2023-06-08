@@ -1,15 +1,20 @@
 import React from 'react';
-import '../scss/components/ListChat.scss';
-import ChatsInner from './ChatsInner';
+import { useSelector } from 'react-redux';
+import ChatsInner from '../ChatsInner/ChatsInner';
 import SeacrhChat from '../SearchChat/SearchChat';
+import './ListChat.scss';
 
 
-function ListChats(props) {
+function ListChats() {
+  const { chats } = useSelector((state) => state.ListChatsSlice);
+    
     return (
         <div className='chats-wrapper'>
             <SeacrhChat/>
-            <ChatsInner/>
-            <ChatsInner/>
+            {chats.map((item, index) => (
+                <ChatsInner key={index} item={item}/>
+            ))}
+
         </div>
     );
 }

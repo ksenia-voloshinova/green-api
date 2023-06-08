@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import {  fetchAuthorization } from "../../utils/api";
+import { getDataLS } from "../../utils/getDataLS";
 
 const initialState = {
-    isLogout: false,
-    idInstance: "",
-    tokenInstance: "",
+    isLogout: getDataLS().loginData.isLogout,
+    idInstance: getDataLS().loginData.idInstance,
+    tokenInstance: getDataLS().loginData.tokenInstance,
     status: "loading",
 };
 
